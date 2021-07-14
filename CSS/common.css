@@ -5,11 +5,11 @@ body {
   line-height: 1.8;
   letter-spacing: 1px;
   word-break: break-all;
-  color: #333;
+  color: #3B4B4D;
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #3B4B4D;
 }
 li {
   list-style: none;
@@ -22,11 +22,13 @@ li {
   background-color: white;
 }
 
+
 .inner{
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
+
 
 .header_nav ul{
   width: 100%;
@@ -41,7 +43,6 @@ li {
 .header_nav ul li a {
   display: block;
   margin: 25px;
-  padding: 5px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -64,7 +65,7 @@ li {
   width: 100%;
   height: 500px;
   overflow: hidden; /*画像が画面からはみ出ないように処理*/
-  background: url("../img/top.png") no-repeat center;
+  background: url("../test_img/Top_kame.png") no-repeat center;
   background-size: cover;
 }
 .top_all::after {
@@ -75,7 +76,7 @@ li {
   z-index: 1; /*Ｚ軸方向に重なっていく（レイヤー1）*/
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .top_inner {
   position: absolute;
@@ -86,23 +87,23 @@ li {
   transform: translate(-50%, -50%);
 }
 .top_inner h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 500;
   color: #ddd;
 }
 
 .top_inner p {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   color: #ddd;
 }
 /*ABOUT CONCEPT section 共通*/
 .section{
   padding:15px 0;
-  border-top:solid 3px #fe9;
+  border-top:solid 3px #FFEE46;
 }
 .section:nth-of-type(odd) {
-  background-color: #eee;
+  background-color: #AFDFE4;
 }
 .descript {
   width: 40%;
@@ -116,8 +117,8 @@ li {
   line-height: 1.4;
   font-size: 40px;
   font-weight: bold;
-  color:#555;
-  border-left: solid 4px #fe9;
+  color:#3B4B4D;
+  border-left: solid 4px #3B4B4D;
 }
 .title span{
   display: block;
@@ -125,16 +126,16 @@ li {
 }
 .txt h3{
   font-size: 30px;
-  color: #555;
+  color: #3B4B4D;
   margin-bottom: 30px;
 }
 .txt p{
-  color: #555;
+  color: #3B4B4D;
 }
 .txt p strong{
   font-weight: bold;
-  color: #555;
-  background: linear-gradient(transparent 60%,#fe9); /*黄色の下線*/
+  color: #3B4B4D;
+  background: linear-gradient(transparent 60%,#FFEE46); /*黄色の下線*/
 }
 
 /*ABOUT section*/
@@ -144,7 +145,7 @@ li {
 .about_img::after{
   content: "";
   position: absolute;
-  background:url("../img/about.png") no-repeat center;
+  background:url("../test_img/クマノミ.jpg") no-repeat center;
   background-size: cover;
   top: 0;
   left: 50%;
@@ -160,7 +161,7 @@ li {
 .concept_img::after{
   content: "";
   position: absolute;
-  background: url("../img/concept.png") no-repeat center;
+  background: url("../test_img/クマノミダイビング.jpg") no-repeat center;
   background-size: cover;
   top: 0;
   right: 50%;
@@ -177,7 +178,7 @@ li {
   display: inline-block;
   width:35%;
   height: 100%;
-  background-color: #eee;
+  background-color:#AFDFE4;
   border-radius: 5px;
   margin: 30px;
   padding: 40px;
@@ -211,6 +212,7 @@ li {
 .photo {
   width: 340px;
   height: 220px;
+  object-fit: cover;
 }
 .price {
   font-size: 17px;
@@ -227,7 +229,22 @@ li {
   font-style: italic;
   font-size: 45px;
 }
-
+.button_1{
+  text-align: center;
+  padding: 10px;
+  background-color: #fe9;
+  border-radius: 10px;
+  width: 60%;
+  margin: 10px auto 10px;
+}
+.button_1:hover{
+  cursor: pointer;
+  background-color: #ff6;
+}
+.button_1 a{
+  font-size: 18px;
+  color: #555;
+}
 
 /*Profile section*/
 
@@ -248,8 +265,25 @@ li {
   display: flex;
 }
 
-.intro_img {
+.intro_img_2 {
   padding-right: 40px;
+}
+.intro_img_1{
+   padding-right: 40px;
+}
+.intro_img_1 img{
+  width: 80px;
+	height:80px;
+  object-fit:cover;
+	border-radius:50%;
+	object-position:-15px 0px;
+}
+.intro_img_2 img{
+  width: 80px;
+	height:80px;
+  object-fit:cover;
+	border-radius:50%;
+	object-position:0px -30px;
 }
 .txt ul {
   padding: 10px;
@@ -275,12 +309,26 @@ li {
 .txt table td {
   padding-left: 10px;
 }
+.staff_sns{
+  display: inline-table;
+  margin-top: 5px;
+}
+.staff_sns img{
+  width: 40px;
+  margin: 10px;
+}
+/*BROG*/
 .blog_block{
   display: inline-table;
   margin: 5px;
 }
 .blog_body{
   margin-top: 10px;
+}
+.blog_body_1 img{
+  width:300px;
+  height:180px;
+  object-fit: cover;
 }
 .blog_body h3{
   font-size: 18px;
@@ -292,13 +340,47 @@ li {
   font-size: 14px;
   color: #555;
 }
+/*MAP*/
+.inner iframe{
+  top: 0;
+  right: 50%;
+  display: block;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 50px 0 #d9d9d9;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+label {
+  display: inline-block;
+  width: 30%;
+  line-height: 2;
+  font-size: 18px;
+}
+input,textarea {
+  box-sizing: border-box;
+  border: solid #ddd 1px;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 6px;
+}
+
+textarea {
+  vertical-align: top;
+  height: 100px;
+}
 .button{
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   background-color: #fe9;
   border-radius: 10px;
-  width: 25%;
-  margin: 0 auto 150px;
+  width: 40%;
+  margin: 40px auto 150px;
 }
 .button:hover{
   cursor: pointer;
@@ -314,11 +396,10 @@ li {
   text-align: center;
   color: #eee;
 }
-.footer_logo{
-  text-align: center;
-}
-.footer_logo img {
-  width: 200px;
+.footer_txt h3{
+  font-size: 40px;
+  font-weight: 500;
+  color: #ddd;
 }
 .footer_sns {
   text-align: center;
